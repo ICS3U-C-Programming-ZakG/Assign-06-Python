@@ -103,6 +103,10 @@ def main():
         for counter in range(len(num_list)):
             print("Your numbers are: {:.2f}".format(num_list[counter]))
 
+        # if user inputs zero with negatives make sure it becomes zero
+        if (calculated_product == -0):
+            calculated_product = 0
+
         # display product
         print()
         print("The product is: {:.2f}.".format(calculated_product))
